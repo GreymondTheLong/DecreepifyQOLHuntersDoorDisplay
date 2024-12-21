@@ -22,14 +22,14 @@ apply plugin: 'org.parchmentmc.librarian.forgegradle'
 apply plugin: 'org.spongepowered.mixin'
 
 mixin {
-    add sourceSets.main, "decreepierqoldoors.refmap.json"
-    config "decreepierqoldoors.mixins.json"
+    add sourceSets.main, "decreepifyqoldoors.refmap.json"
+    config "decreepifyqoldoors.mixins.json"
 }
 
 
 
 version = '0.29.0-1.18.2'
-group = 'io.gray.decreepierqoldoors' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+group = 'io.gray.decreepifyqoldoors' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'DecreepifyQolHuntersDoorDisplay'
 
 // Mojang ships Java 17 to end users in 1.18+, so your mod should target Java 17.
@@ -73,10 +73,10 @@ minecraft {
             property 'forge.logging.console.level', 'debug'
 
             // Comma-separated list of namespaces to load gametests from. Empty = all namespaces.
-            property 'forge.enabledGameTestNamespaces', 'decreepierqoldoors'
+            property 'forge.enabledGameTestNamespaces', 'decreepifyqoldoors'
 
             mods {
-                decreepierqoldoors {
+                decreepifyqoldoors {
                     source sourceSets.main
                 }
             }
@@ -90,10 +90,10 @@ minecraft {
             property 'forge.logging.console.level', 'debug'
 
             // Comma-separated list of namespaces to load gametests from. Empty = all namespaces.
-            property 'forge.enabledGameTestNamespaces', 'decreepierqoldoors'
+            property 'forge.enabledGameTestNamespaces', 'decreepifyqoldoors'
 
             mods {
-                decreepierqoldoors {
+                decreepifyqoldoors {
                     source sourceSets.main
                 }
             }
@@ -118,10 +118,10 @@ minecraft {
             property 'forge.logging.console.level', 'debug'
 
             // Comma-separated list of namespaces to load gametests from. Empty = all namespaces.
-            property 'forge.enabledGameTestNamespaces', 'decreepierqoldoors'
+            property 'forge.enabledGameTestNamespaces', 'decreepifyqoldoors'
 
             mods {
-                decreepierqoldoors {
+                decreepifyqoldoors {
                     source sourceSets.main
                 }
             }
@@ -135,10 +135,10 @@ minecraft {
             property 'forge.logging.console.level', 'debug'
 
             // Specify the modid for data generation, where to output the resulting resource, and where to look for existing resources.
-            args '--mod', 'decreepierqoldoors', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
+            args '--mod', 'decreepifyqoldoors', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
 
             mods {
-                decreepierqoldoors {
+                decreepifyqoldoors {
                     source sourceSets.main
                 }
             }
@@ -207,7 +207,7 @@ dependencies {
 jar {
     manifest {
         attributes([
-                "Specification-Title"     : "decreepierqoldoors",
+                "Specification-Title"     : "decreepifyqoldoors",
                 "Specification-Vendor"    : "Grayire",
                 "Specification-Version"   : "1", // We are version 1 of ourselves
                 "Implementation-Title"    : project.name,
