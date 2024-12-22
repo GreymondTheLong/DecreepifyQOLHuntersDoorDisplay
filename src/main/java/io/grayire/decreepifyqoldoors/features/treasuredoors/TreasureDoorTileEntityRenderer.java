@@ -1,4 +1,4 @@
-package io.iridium.qolhunters.features.treasuredoors;
+package io.grayire.decreepifyqoldoors.features.treasuredoors;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Vector3f;
@@ -56,9 +56,8 @@ public class TreasureDoorTileEntityRenderer implements BlockEntityRenderer<Treas
         //SMH devs can't spell
         text = text.equals("PETZANITE") ? "PETEZANITE" : text;
 
-        if(playerName == null) playerName = Minecraft.getInstance().player.getName().getString();
-
-        text = text.equals("ISKALLIUM") && playerName.equals("HrryBrry") ? "GLORPIUM" : text;
+        // Replace creepy door name with cool and hip door name
+        text = text.equals("ISKALLIUM") ? "GLIZZINITE" : text;
 
         int xOffset = Minecraft.getInstance().font.width(text);
         Minecraft.getInstance().font.drawInBatch(text, (float) (-xOffset)/2.0F, 0, 0xFFFFFF, true, poseStack.last().pose(), bufferSource, false, 0, combinedLight);
